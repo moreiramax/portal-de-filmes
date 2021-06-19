@@ -12,7 +12,7 @@ function createImageContainer(imageUrl, id, title, overview, vote_average) {
 
     const movieElement = `
     <div class="card movie_card">
-    <img src="${imageUrl}" class="card-img-top" alt="" data-movie-id="${id}">
+    <a href="https://www.themoviedb.org/movie/${id}" target="_blank"><img src="${imageUrl}" class="card-img-top" alt="" data-movie-id="${id}"></a>
     <div class="card-body movie_card_body" style="background-color: black; border-radius: 5px">
       <p class="card-title" style="color: white">${title}</p>
       <span class="movie_info float-right" style="color:white"><i class="fas fa-star"></i> ${vote_average} / 10</span>
